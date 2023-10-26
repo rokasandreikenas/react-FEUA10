@@ -16,3 +16,4 @@
 - package.json depenedencies - mūsų naudojami moduliai projekte. Įrašius "npm install" žiūrima į dependencies sąrašą ir surašomi node_modules
 - package.json devDependencies - mūsų naudojami moduliai skirti tik development(programavimui)
 - node modules sąrašas https://www.npmjs.com/
+- css reset https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-10
