@@ -1,5 +1,6 @@
 import Section from "./components/Section";
 import Button from "./components/Button";
+import { FaBeer } from "react-icons/fa";
 import "./App.css";
 
 function App() {
@@ -14,10 +15,13 @@ function App() {
   return (
     <main>
       <header>
-        <h1 className="hello">Hello world</h1>
+        <h1 className="hello">
+          Hello world <FaBeer />{" "}
+        </h1>
       </header>
       <div className="container">
         If you love software press this button <Button />
+        <FaBeer color="red" />
         <section className="custom-section">
           <p>Wow {name}</p>
         </section>
