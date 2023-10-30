@@ -17,3 +17,4 @@
 - package.json devDependencies - mūsų naudojami moduliai skirti tik development(programavimui)
 - node modules sąrašas https://www.npmjs.com/
 - css reset https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-10
+- "npm install package_name" - įrašo į projektą modulį iš npmjs pvz. "npm install react-icons"

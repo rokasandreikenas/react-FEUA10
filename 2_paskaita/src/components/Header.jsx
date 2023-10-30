@@ -1,5 +1,11 @@
 import NavigationItem from "./NavigationItem";
 import Button from "./Button";
+import {
+  FaCog,
+  FaQuestionCircle,
+  FaSearch,
+  FaUserCircle,
+} from "react-icons/fa";
 import "./Header.css";
 
 const Header = () => {
@@ -26,16 +32,22 @@ const Header = () => {
           <NavigationItem
             title="Įrankiai"
             href="https://post.lt/lt/siuntimas-Lietuvoje"
+            startIcon={<FaCog fontSize={24} />}
           />
           <NavigationItem
             title="Pagalba"
             href="https://post.lt/lt/siuntimas-Lietuvoje"
+            startIcon={<FaQuestionCircle fontSize={24} />}
           />
           <NavigationItem
             title="Paieška"
             href="https://post.lt/lt/siuntimas-Lietuvoje"
+            startIcon={<FaSearch fontSize={24} />}
           />
-          <Button title="Siųsti siuntą" />
+          <Button
+            title="Siųsti siuntą"
+            startIcon={<FaUserCircle fontSize={20} />}
+          />
         </div>
       </nav>
     </header>
