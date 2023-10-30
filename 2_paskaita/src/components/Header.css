@@ -1,0 +1,30 @@
+.header {
+  background-color: #f1f1f1;
+}
+
+.header .navigation {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 120px;
+}
+
+.logo img {
+  width: 100%;
+}
