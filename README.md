@@ -18,3 +18,6 @@
 - node modules sąrašas https://www.npmjs.com/
 - css reset https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-10
 - "npm install package_name" - įrašo į projektą modulį iš npmjs pvz. "npm install react-icons"
+- Beautiful CSS box-shadow examples https://getcssscan.com/css-box-shadow-examples
+- Ternary operators: ? : if else; && if
+- JSX nepriima if else operatorių, todėl turime naudoti ternary operatorius
