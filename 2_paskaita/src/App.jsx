@@ -32,6 +32,8 @@ const App = () => {
     }
   };
 
+  const fruits = ["Apple", "Banana", "Carrot"];
+
   return (
     <div>
       <Header />
@@ -73,6 +75,18 @@ const App = () => {
       <Greeting />
       <Greeting name="Rokas" />
       <Greeting name="Tomas" lastLoggedIn={new Date().toLocaleDateString()} />
+      <br />
+      {["Petras", "Jonas", "Antanas", "Tomas", "Rokas"].map((name) => (
+        <Greeting key={name} name={name} />
+      ))}
+      <br />
+      <ul>
+        {fruits.map((fruit, index) => (
+          <li key={fruit}>
+            {fruit} {index}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
