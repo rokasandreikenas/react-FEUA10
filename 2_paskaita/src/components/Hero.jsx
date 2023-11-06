@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
+
 const Hero = (props) => {
   return (
     <div
@@ -17,6 +18,13 @@ const Hero = (props) => {
       <h2>{props.subtitle}</h2>
     </div>
   );
+};
+
+Hero.propTypes = {
+  color: PropTypes.string,
+  imageUrl: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
 };
 
 export default Hero;

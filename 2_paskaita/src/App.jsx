@@ -42,6 +42,8 @@ const App = () => {
         subtitle="Visiem saldainiam akcija"
         imageUrl="https://cdn.britannica.com/77/249077-138-B757C7FD/origins-of-Halloween-explained.jpg?w=800&h=450&c=crop"
       />
+
+      <Hero color="red" title="Akcija atrakcija" />
       <br />
       <br />
       <Button title="Spausk mane" />
@@ -66,6 +68,7 @@ const App = () => {
         <Card
           imageUrl="https://assets.editorial.aetnd.com/uploads/2009/11/halloween-gettyimages-1424736925.jpg"
           description="Halloween party Klaipeda"
+          price={15}
         />
       </div>
       <br />
