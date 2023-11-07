@@ -21,3 +21,12 @@
 - Beautiful CSS box-shadow examples https://getcssscan.com/css-box-shadow-examples
 - Ternary operators: ? : if else; && if
 - JSX nepriima if else operatorių, todėl turime naudoti ternary operatorius
+- "children" prop - parametras paduodas į komponento vidų <Button>children</Button>
+- "npm install prop-types" įrašo proptypes biblioteką.
+- import PropTypes from "prop-types"; importuoja proptypes biblioteką
+- Button.propTypes = { onClick: PropTypes.func.isRequired, color: PropTypes.strings } panaudoja proptypes
+- proptypes: number (skaičius), string (tekstas), func (funkcija), node (bet koks elementas), shape (objektas)
+- elementai turi savo onClick handlerį - funkcija kuri bus iškviesta kai bus nuspaustas elementas <button onClick={() => setValue("labas")}> Say hello</button>
+- useState hooksas - React aplinkoje naudajamas funkcionalumas duomenims manipuliuoti pvz. const [state, setState] = useState(0);
+- state yra reikšmė, setState yra update funkcija. Panaudojimas setState("nauja reikšmė")
+- .map() - iteruoja per elementus ir grąžina naują masyvą. const users = ["Tomas", "Rokas"]; users.map(user => <div key={user}>{user}</div>)
