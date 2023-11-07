@@ -30,3 +30,4 @@
 - useState hooksas - React aplinkoje naudajamas funkcionalumas duomenims manipuliuoti pvz. const [state, setState] = useState(0);
 - state yra reikšmė, setState yra update funkcija. Panaudojimas setState("nauja reikšmė")
 - .map() - iteruoja per elementus ir grąžina naują masyvą. const users = ["Tomas", "Rokas"]; users.map(user => <div key={user}>{user}</div>)
+- useEffect - tuščias dependency masyvas reiškia, kad hooksas suveiks tik vieną kartą pvz. useEffect(() => {}, []);
