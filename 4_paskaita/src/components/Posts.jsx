@@ -4,7 +4,7 @@ import Post from "./Post";
 const URL = "https://jsonplaceholder.typicode.com/posts";
 
 const Posts = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([]); // pradine reikšmė masyvas, jeigu duomenys bus masyve
 
   useEffect(() => {
     fetch(URL)
