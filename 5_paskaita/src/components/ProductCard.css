@@ -1,0 +1,12 @@
+.product-card {
+  text-align: center;
+  border: 1px solid grey;
+  padding-bottom: 1rem;
+}
+
+.product-card .price {
+  font-size: 1.5rem;
+  color: red;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}

@@ -5,6 +5,7 @@ const URL = "https://jsonplaceholder.typicode.com/posts";
 
 const Posts = () => {
   const [data, setData] = useState([]); // pradine reikšmė masyvas, jeigu duomenys bus masyve
+  const [error, setError] = useState("");
 
   useEffect(() => {
     fetch(URL)
@@ -14,13 +15,15 @@ const Posts = () => {
       })
       .catch((error) => {
         console.error(error);
+        setError("Įvyko klaida. Pabandykite už kelių akimirkų.");
       });
-  }, []); // tusčias masyvas indikuoja, kad suveiks tik vieną kartą, kai komponentas užsikraus
+  }, []);
 
   return (
     <div>
+      {error && <h3 style={{ color: "red" }}>{error}</h3>}
       {data.map((item, index) => (
-        <Post key={item.id} post={item} index={index} />
+        <Post key={index} post={item} index={index} />
       ))}
     </div>
   );
