@@ -32,4 +32,8 @@
 - .map() - iteruoja per elementus ir grąžina naują masyvą. const users = ["Tomas", "Rokas"]; users.map(user => <div key={user}>{user}</div>)
 - useEffect - tuščias dependency masyvas reiškia, kad hooksas suveiks tik vieną kartą pvz. useEffect(() => {}, []);
 - .map() būtinas key parametras - kiekvienas iteruojamas itemas turi turėti unikalų raktą, kad nustatyti, kurie sąrašo elementai yra pakeisti, atnaujinti ar ištrinti. kokį raktą naudojate (dažniausiai unikalų itemo id)? ar galime naudoti index kaip raktą (nepatartina, nes gali susimaišyti raktai darant edit arba delete)? jeigu neturime id ir negalime naudoti index, tai kokį raktą naudoti?
--
+- Object.keys(Object) - ištraukia raktus iš objekto. Jeigu padarysime Object.keys(Object).length === 0, mes patikrinsim ar objektas yra tuščias
+- <input type="email" id="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} autoComplete="email" />
+- <form onSubmit={handleSubmit}>...</form>   const handleSubmit = (event) => { event.preventDefault(); }
+- event.preventDefault() neperkrauna aplikacijos
+- <form> naudojam <button type='submit'>Submit</button>

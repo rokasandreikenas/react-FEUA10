@@ -50,9 +50,7 @@ const InputExamples = () => {
         style={{ marginBottom: 16 }}
       />
       {password !== repeatPassword && (
-        <p style={{ marginLeft: "1rem", color: "red" }}>
-          Slaptazodziai neatitinka!
-        </p>
+        <p style={{ color: "red" }}>Slaptazodziai neatitinka!</p>
       )}
       <select
         style={{ width: 200 }}

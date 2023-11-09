@@ -4,10 +4,23 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [error, setError] = useState({});
+
+  const errorChecker = () => {
+    let errorObject = {};
+    if (!email) errorObject.email = "Laukas privalomas";
+    if (!password) errorObject.password = "Laukas privalomas";
+    return errorObject;
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsLoggedIn(true);
+    const errorObject = errorChecker();
+
+    setError(errorObject);
+
+    const hasErrors = Object.keys(errorObject).length !== 0;
+    setIsLoggedIn(!hasErrors);
   };
 
   const handleLogOut = () => {
@@ -37,6 +50,7 @@ const LoginForm = () => {
           onChange={(event) => setEmail(event.target.value)}
           autoComplete="email"
         />
+        <p style={{ color: "red" }}>{error.email}</p>
       </div>
       <div style={{ marginBottom: 16 }}>
         <label htmlFor="email">Slaptažodis</label>
@@ -48,7 +62,9 @@ const LoginForm = () => {
           onChange={(event) => setPassword(event.target.value)}
           autoComplete="password"
         />
+        <p style={{ color: "red" }}>{error.password}</p>
       </div>
+
       <button type="submit">Login</button>
     </form>
   );
