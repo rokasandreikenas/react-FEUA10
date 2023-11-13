@@ -37,3 +37,7 @@
 - <form onSubmit={handleSubmit}>...</form>   const handleSubmit = (event) => { event.preventDefault(); }
 - event.preventDefault() neperkrauna aplikacijos
 - <form> naudojam <button type='submit'>Submit</button>
+- npm install react-router-dom@6.11.2
+- import {BrowserRouter} in main.jsx - importuoti ir apglebti, jei neišku perskaityti skaidres
+- <Routes><Route path="/" element={<Home/>}/> </Routes> - App.jsx faile nurodom kelius
+- <Link to="/contacts">Contacts</Link> - pereiti į kitą kelią
