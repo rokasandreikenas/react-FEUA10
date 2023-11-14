@@ -1,0 +1,34 @@
+.meal-kit-card {
+  height: 300px;
+  outline: 2px solid #cecece;
+  border-radius: 1rem;
+
+  .card-header {
+    height: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .card-footer {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+
+    .left-side .badge {
+      background-color: green;
+      color: white;
+      border-radius: 30px;
+      padding: 0.1rem 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .price-block {
+      text-align: right;
+    }
+  }
+}

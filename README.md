@@ -41,3 +41,4 @@
 - import {BrowserRouter} in main.jsx - importuoti ir apglebti, jei neišku perskaityti skaidres
 - <Routes><Route path="/" element={<Home/>}/> </Routes> - App.jsx faile nurodom kelius
 - <Link to="/contacts">Contacts</Link> - pereiti į kitą kelią
+- norint naudoti .scss failus savo projekete reikalingas "npm install sass"

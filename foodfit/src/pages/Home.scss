@@ -1,0 +1,23 @@
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
