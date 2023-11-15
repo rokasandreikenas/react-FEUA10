@@ -2,15 +2,21 @@ import PropTypes from "prop-types";
 import "./MealKitCard.scss";
 
 const MealKitCard = (props) => {
-  const { url, mealCount, title, price } = props.mealKit;
+  const { mealKit, handlePlusClick } = props;
+  const { imageUrl, mealCount, title, price } = mealKit;
+
   return (
     <div className="meal-kit-card">
       <div
         className="card-header"
         style={{
-          backgroundImage: `url("${url}")`,
+          backgroundImage: `url("${imageUrl}")`,
         }}
-      ></div>
+      >
+        <button className="plus-button" onClick={handlePlusClick}>
+          +
+        </button>
+      </div>
       <div className="card-footer">
         <div className="left-side">
           <span className="badge">
@@ -30,11 +36,12 @@ const MealKitCard = (props) => {
 
 MealKitCard.propTypes = {
   mealKit: PropTypes.shape({
-    url: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
     mealCount: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
   }),
+  handlePlusClick: PropTypes.func.isRequired,
 };
 
 export default MealKitCard;

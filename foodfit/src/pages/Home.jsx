@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import MealKitCard from "../components/MealKitCard";
 import Loader from "../components/Loader";
-import { fetchMealKits } from "../api";
+import { fetchMealKits, updateCart } from "../api";
 import { Link } from "react-router-dom";
-import "./Home.scss";
 import Button from "../components/Button";
+import "./Home.scss";
 
 const Home = () => {
   const [mealKits, setMealKits] = useState([]);
@@ -21,6 +21,11 @@ const Home = () => {
       });
   }, []);
 
+  const handlePlusClick = (mealKit) => {
+    console.log(mealKit);
+    updateCart(mealKit);
+  };
+
   return (
     <main className="container">
       <div className="header">
@@ -36,7 +41,11 @@ const Home = () => {
       )}
       <div className="cards">
         {mealKits.map((mealKit) => (
-          <MealKitCard key={mealKit.title} mealKit={mealKit} />
+          <MealKitCard
+            key={mealKit.id}
+            mealKit={mealKit}
+            handlePlusClick={() => handlePlusClick(mealKit)}
+          />
         ))}
       </div>
     </main>

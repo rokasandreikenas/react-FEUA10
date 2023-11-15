@@ -4,12 +4,37 @@
   border-radius: 1rem;
 
   .card-header {
+    position: relative;
     height: 50%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+
+    .plus-button {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      width: 36px;
+      height: 36px;
+      font-size: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 300;
+      border-radius: 50%;
+      border: none;
+      background-color: #ffffff;
+      color: green;
+
+      &:hover {
+        background-color: green;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 300ms;
+      }
+    }
   }
 
   .card-footer {

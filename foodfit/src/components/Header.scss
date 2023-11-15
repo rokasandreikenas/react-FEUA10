@@ -1,0 +1,16 @@
+.top-header {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  nav a {
+    color: #673ab7;
+    padding: 1rem;
+
+    &:hover {
+      color: white;
+      background-color: #673ab7;
+      transition: 300ms;
+    }
+  }
+}
