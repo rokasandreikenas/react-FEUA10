@@ -42,3 +42,4 @@
 - <Routes><Route path="/" element={<Home/>}/> </Routes> - App.jsx faile nurodom kelius
 - <Link to="/contacts">Contacts</Link> - pereiti į kitą kelią
 - norint naudoti .scss failus savo projekete reikalingas "npm install sass"
+- const { id } = useParams(); parametras visada grižta kaip string, todėl nepamirškime castint i number (jei reikia)
