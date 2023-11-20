@@ -56,4 +56,11 @@
       text-align: right;
     }
   }
+
+  .dark {
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
 }

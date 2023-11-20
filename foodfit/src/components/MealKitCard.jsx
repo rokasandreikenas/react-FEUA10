@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import PropTypes from "prop-types";
+import { ThemeContext } from "../context/ThemeContext";
 import "./MealKitCard.scss";
 
 const MealKitCard = (props) => {
+  const { isDarkMode } = useContext(ThemeContext);
   const { mealKit, handlePlusClick } = props;
   const { imageUrl, mealCount, title, price } = mealKit;
 
@@ -17,7 +20,7 @@ const MealKitCard = (props) => {
           +
         </button>
       </div>
-      <div className="card-footer">
+      <div className={`card-footer ${isDarkMode ? "dark" : ""} `}>
         <div className="left-side">
           <span className="badge">
             {mealCount} {mealCount === 1 ? "patiekalas" : "patiekalai"}
