@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useRef } from "react";
+import SimpleContextExample from "./SimpleContextExample";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -10,14 +12,16 @@ const App = () => {
   };
 
   return (
-    <div>
+    <ThemeProvider>
       <input
         ref={inputRef}
         value={name}
         onChange={(event) => setName(event.target.value)}
       />
       <button onClick={handleFocusNameInput}>Focus on my name input</button>
-    </div>
+
+      <SimpleContextExample />
+    </ThemeProvider>
   );
 };
 

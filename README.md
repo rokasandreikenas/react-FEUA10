@@ -44,3 +44,6 @@
 - norint naudoti .scss failus savo projekete reikalingas "npm install sass"
 - const { id } = useParams(); parametras visada grižta kaip string, todėl nepamirškime castint i number (jei reikia)
 - useRef() hooksas yra objektas kuris turi current savybę. pvz.: {current: null}
+- export const ThemeContext = createContext(themes.light); - sukuriamas context su defaultValue
+- <ThemeContext.Provider value={themes.light}>{...}</ThemeContext.Provider> - Konteksto pateikimas su reikšme
+- const theme = useContext(ThemeContext); - Konteksto panaudojimas ir reikšmės ištraukimas
