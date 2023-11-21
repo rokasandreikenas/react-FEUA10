@@ -4,9 +4,9 @@ import Loader from "../components/Loader";
 import { fetchMealKits, updateCart } from "../api";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
-import "./Home.scss";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import styles from "./Home.module.scss";
 
 const Home = () => {
   const [mealKits, setMealKits] = useState([]);
@@ -30,12 +30,9 @@ const Home = () => {
   };
 
   return (
-    <main className="container">
-      <div className="header">
-        <h3
-          className="section-title"
-          style={{ color: isDarkMode ? "white" : "inherit" }}
-        >
+    <main className={styles.container}>
+      <div className={styles.header}>
+        <h3 style={{ color: isDarkMode ? "white" : "inherit" }}>
           Mitybos rinkiniai
         </h3>
         <Link to="/new">
@@ -43,11 +40,11 @@ const Home = () => {
         </Link>
       </div>
       {isLoading && (
-        <div className="loader">
+        <div className={styles.loader}>
           <Loader />
         </div>
       )}
-      <div className="cards">
+      <div className={styles.cards}>
         {mealKits.map((mealKit) => (
           <MealKitCard
             key={mealKit.id}

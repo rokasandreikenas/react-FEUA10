@@ -29,6 +29,8 @@ const MealKitForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="form">
+      <div className="test">Check this out</div>
+
       {isSubmitted && (
         <h3 className="success-message">
           Sėkmingai sukūrėte naują mitybos rinkinį
