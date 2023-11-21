@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
-import "./Input.scss";
+import styled from "styled-components";
 
 const Input = (props) => {
   const { label, ...rest } = props;
   return (
     <div>
-      <label className="label">{label}</label>
-      <input className="input" {...rest} />
+      <StyledLabel>{label}</StyledLabel>
+      <StyledInput {...rest} />
     </div>
   );
 };
@@ -16,3 +16,23 @@ Input.propTypes = {
 };
 
 export default Input;
+
+const StyledLabel = styled.label`
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+`;
+
+const StyledInput = styled.input`
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+`;

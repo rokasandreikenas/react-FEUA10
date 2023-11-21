@@ -29,8 +29,6 @@ const MealKitForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="form">
-      <div className="test">Check this out</div>
-
       {isSubmitted && (
         <h3 className="success-message">
           Sėkmingai sukūrėte naują mitybos rinkinį
@@ -38,6 +36,7 @@ const MealKitForm = () => {
       )}
       <Input
         label="Pavadinimas"
+        placeholder="Įrašykite pavadinimą..."
         value={title}
         onChange={(event) => setTitle(event.target.value)}
       />
@@ -55,6 +54,7 @@ const MealKitForm = () => {
       />
       <Input
         label="Nuotraukos nuoroda"
+        placeholder="Įklijuokite nuorodą..."
         type="url"
         value={imageUrl}
         onChange={(event) => setImageUrl(event.target.value)}
