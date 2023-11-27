@@ -1,12 +1,15 @@
+import { Routes, Route } from "react-router-dom";
 import Pets from "./pages/Pets";
+import PetForm from "./pages/PetForm";
+import Pet from "./pages/Pet";
 
 const App = () => {
-  // Implement Routes and Route
-  // /pets/:id
   return (
-    <div>
-      <Pets />
-    </div>
+    <Routes>
+      <Route path="/" element={<Pets />} />
+      <Route path="/pets/:id" element={<Pet />} />
+      <Route path="/add-pet" element={<PetForm />} />
+    </Routes>
   );
 };
 
