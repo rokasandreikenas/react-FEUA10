@@ -53,3 +53,4 @@
 - <Formik> pagrindiniai parametrai yra initialValues, onSubmit ir valdiate
 - "yup" biblioteka skirta validavimui. Super sueina su Formik
 - useLocalStorage hooksas - custom hooksas (React funkcija)
+- json-server - https://www.npmjs.com/package/json-server
