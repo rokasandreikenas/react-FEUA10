@@ -49,3 +49,7 @@
 - const theme = useContext(ThemeContext); - Konteksto panaudojimas ir reikšmės ištraukimas
 - mano pasirinkimas būtų scss + modules arba styled-components arba betkoks css in Js variantas
 - naudoti "axios" biblioteką HTTP requestam (GET, POST, PUT, DELETE)
+- naudojant "formik" nepamiršti įsirašyti "npm install formik"
+- <Formik> pagrindiniai parametrai yra initialValues, onSubmit ir valdiate
+- "yup" biblioteka skirta validavimui. Super sueina su Formik
+- useLocalStorage hooksas - custom hooksas (React funkcija)

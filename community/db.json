@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "rokaszxc",
+      "email": "rokas@gmail.com",
+      "password": "rokas123"
+    },
+    {
+      "username": "rokasz",
+      "email": "rokas@rokas.com",
+      "password": "rokas123",
+      "confirmPassword": "rokas123",
+      "id": 2
+    },
+    {
+      "username": "rokasz123",
+      "email": "rokas@rokas.com",
+      "password": "rokas123",
+      "confirmPassword": "rokas123",
+      "id": 3
+    },
+    {
+      "username": "testukaz",
+      "email": "test@gmail.com",
+      "password": "test123",
+      "confirmPassword": "test123",
+      "id": 4
+    }
+  ]
+}
