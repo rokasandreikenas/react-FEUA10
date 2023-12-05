@@ -24,7 +24,7 @@ const Register = () => {
   const handleSubmit = async (values) => {
     try {
       await createUser(values);
-      navigate(PATHS.Login);
+      navigate(PATHS.Home);
     } catch (error) {
       console.error(error);
     }
@@ -46,36 +46,45 @@ const Register = () => {
         >
           {({ isSubmitting }) => (
             <Form>
-              <FormField
-                label="Username"
-                name="username"
-                type="text"
-                placeholder="Username"
-              />
-              <FormField
-                label="Email"
-                name="email"
-                type="email"
-                placeholder="Email"
-              />
-              <FormField
-                label="Password"
-                name="password"
-                type="password"
-                placeholder="Password"
-              />
-              <FormField
-                label="Confirm Password"
-                name="confirmPassword"
-                type="password"
-                placeholder="Confirm Password"
-              />
+              <div className={styles.field}>
+                <FormField
+                  label="Username"
+                  name="username"
+                  type="text"
+                  placeholder="Username"
+                />
+              </div>
+
+              <div className={styles.field}>
+                <FormField
+                  label="Email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div className={styles.field}>
+                <FormField
+                  label="Password"
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div className={styles.field}>
+                <FormField
+                  label="Confirm Password"
+                  name="confirmPassword"
+                  type="password"
+                  placeholder="Confirm Password"
+                />
+              </div>
               <Button type="submit" disabled={isSubmitting}>
                 Register
               </Button>
               <div className={styles.link}>
                 Already have an account?{" "}
-                <Link to={PATHS.Login}>Back to login</Link>
+                <Link to={PATHS.Home}>Back to login</Link>
               </div>
             </Form>
           )}

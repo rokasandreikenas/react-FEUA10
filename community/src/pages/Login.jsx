@@ -5,9 +5,9 @@ import FormField from "../components/FormField";
 import Button from "../components/Button";
 import { PATHS } from "../routes/consts";
 import { loginUser } from "../api/users";
-import styles from "./Login.module.scss";
 import { useContext, useState } from "react";
 import { UserContext } from "../context/UserContext";
+import styles from "./Login.module.scss";
 
 const loginSchema = Yup.object().shape({
   username: Yup.string().required("Required"),
@@ -45,21 +45,25 @@ const Login = () => {
         >
           {({ isSubmitting }) => (
             <Form>
-              <FormField
-                label="Username"
-                name="username"
-                type="text"
-                placeholder="Username"
-              />
-              <FormField
-                label="Password"
-                name="password"
-                type="password"
-                placeholder="Password"
-              />
+              <div className={styles.field}>
+                <FormField
+                  label="Username"
+                  name="username"
+                  type="text"
+                  placeholder="Username"
+                />
+              </div>
+              <div className={styles.field}>
+                <FormField
+                  label="Password"
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
               {error && <div className={styles.error}>{error}</div>}
               <Button type="submit" disabled={isSubmitting}>
-                Submit
+                Login
               </Button>
               <div className={styles.link}>
                 Don&apos;t have an account?{" "}

@@ -51,6 +51,7 @@
 - naudoti "axios" biblioteką HTTP requestam (GET, POST, PUT, DELETE)
 - naudojant "formik" nepamiršti įsirašyti "npm install formik"
 - <Formik> pagrindiniai parametrai yra initialValues, onSubmit ir valdiate
-- "yup" biblioteka skirta validavimui. Super sueina su Formik
+- "yup" biblioteka skirta validavimui. Super sueina su Formik - https://www.npmjs.com/package/yup
 - useLocalStorage hooksas - custom hooksas (React funkcija)
 - json-server - https://www.npmjs.com/package/json-server
+- norint pasileisti aplikaciją + serverį, reikia naudoti 2 terminalus

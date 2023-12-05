@@ -11,8 +11,12 @@ const UserProvider = ({ children }) => {
 
   const isLoggedIn = !!user; // kintamasis naudojamas ar prisijungęs
 
+  const handleLogout = () => {
+    setUser(null);
+  };
+
   return (
-    <UserContext.Provider value={{ user, setUser, isLoggedIn }}>
+    <UserContext.Provider value={{ user, setUser, isLoggedIn, handleLogout }}>
       {children}
     </UserContext.Provider>
   );
