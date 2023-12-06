@@ -34,5 +34,14 @@
       "confirmPassword": "rokas123",
       "id": 5
     }
+  ],
+  "posts": [
+    {
+      "title": "test Rokas",
+      "text": "123",
+      "imageUrl": "https://images.fineartamerica.com/images-medium-large/euro-currency-symbol-in-focus-bjorn-holland.jpg",
+      "createdBy": "rokas@gmail.com",
+      "id": 4
+    }
   ]
 }

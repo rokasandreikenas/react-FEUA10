@@ -1,0 +1,30 @@
+.postCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.postTitle {
+  margin-top: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.postFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postText {
+  font-size: 16px;
+  color: #666;
+}
